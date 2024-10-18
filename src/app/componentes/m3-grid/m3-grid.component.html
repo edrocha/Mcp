@@ -1,0 +1,25 @@
+<!--<input type="text" [(ngModel)]="filtro" placeholder="Digite para filtrar">-->
+<table class="table caption-top">
+  <caption><b>Lista de usuarios</b></caption>
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col" *ngFor="let item of cabecalho">
+        {{item}}
+      </th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let registro of registros ; let i = index"
+    [ngClass]="{'zebrado-par': i % 2 === 0, 'zebrado-impar': i % 2 !== 0}"
+    >
+      <td *ngFor="let key of getKeys(registro)">{{ registro[key] }}</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+

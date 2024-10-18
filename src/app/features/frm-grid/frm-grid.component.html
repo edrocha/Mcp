@@ -1,0 +1,44 @@
+<div class="main">
+<br>
+<m3-title title="Componente App-Input"></m3-title>
+<br>
+
+<h3>&lt;m3-grid titulo="VariavelArray" conteudo="VariavelArray"&gt;  &lt;/m3-grid&gt;</h3>
+<br>
+
+<h2>Exemplo</h2>
+
+<h2>Html></h2>
+<h3>&lt;m3-grid <b>titulo</b>="&#123; &#123; titulo &#125;&#125;" <b>conteudo</b>="&#123; &#123; json &#125;&#125;"&gt;  &lt;/m3-grid&gt;</h3>
+
+<h2>Typescript</h2>
+
+<textarea rows="24" cols="150" style="background-color:black; color:white; font-size:16px" >
+  import { Component } from '@angular/core';
+
+  @Component({
+    selector: 'app-frm-grid',
+    templateUrl: './frm-grid.component.html',
+    styleUrls: ['./frm-grid.component.css']
+  })
+  export class FrmGridComponent {
+
+    title: string = "Nome, Email, Telefone"
+    json! : string
+    linhas! : string
+    conteudo : Array<string> = ["Marcos, marcos@gmail.com,","Pedro, pedro@gmail.com,11 3422-2028"];
+    ngOnInit(){
+        this.json = '[{"id":"1","Nome": "Eduardo Vasconcelos","Email":"edu@gmail.com", "Telefone":"11-3455-8888"},{"id":"2","Nome": "Ana Vasconcelos","Email":"Ana@gmail.com","Telefone":""},{"id":"3","Nome": "Pedro Vasconcelos","Email":"Ana@gmail.com","Telefone":"11 3455-2828"}]'
+        this.linhas = JSON.parse(this.json)
+        }
+  }
+
+</textarea>
+<br><br><br>
+<h2>Resultado</h2>
+<br>
+
+<m3-grid titulo="{{title}}" conteudo="{{json}}"></m3-grid>
+
+
+</div>

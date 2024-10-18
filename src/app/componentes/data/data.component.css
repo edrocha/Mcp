@@ -1,0 +1,19 @@
+.ul-input{
+  list-style-type: none;
+}
+.d-input{
+  background-color: rgb(231, 228, 228);
+  padding: 5px 5px 5px 5px;
+}
+.ul-input span{
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.i-input{
+  border: none;
+  border-bottom: solid 1px;
+  border-color: rgb(51, 191, 191);
+  height: 30px;
+  width: 98%;
+
+}

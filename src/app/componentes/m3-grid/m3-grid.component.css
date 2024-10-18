@@ -1,0 +1,11 @@
+.zebrado-par {
+  background-color: #ece6e6; /* Cor de fundo para linhas pares */
+}
+
+.zebrado-impar {
+  background-color: #ffffff; /* Cor de fundo para linhas ímpares */
+}
+
+tbody tr:hover {
+  background-color: #aaa9a9; /* Altere a cor de fundo conforme necessário */
+}
