@@ -1,0 +1,60 @@
+/* Estilo principal para o título */
+.main-title {
+    font-size: 2.5rem;
+    color: #4a90e2; /* Azul suave */
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 3px solid #d4e0ff;
+    padding-bottom: 10px;
+  }
+  
+  /* Seção de informações */
+  .info-section {
+    background-color: #f9f9f9; /* Fundo claro para destacar o conteúdo */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    max-width: 800px;
+    margin: 0 auto; /* Centraliza o conteúdo */
+  }
+  
+  /* Subtítulo */
+  .subtitle {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  /* Descrição */
+  .description {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilo para negrito */
+  .description strong {
+    color: #4a90e2; /* Destaque para palavras importantes */
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .main-title {
+      font-size: 2rem;
+    }
+  
+    .subtitle {
+      font-size: 1.6rem;
+    }
+  
+    .description {
+      font-size: 1.1rem;
+    }
+  }
+  
