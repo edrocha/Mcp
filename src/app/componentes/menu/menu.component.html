@@ -1,11 +1,10 @@
-<h5>Componentes Pessoais </h5>
+<h5 class="section-title">Componentes Pessoais</h5>
 <div class="menu">
-   <ul>
-      <li *ngFor="let lista of listas">
-        <img src="../../../assets/images/{{lista.logo}}" class="logo">
-        <a href="" [routerLink]="lista.url">{{lista.label}}</a>
-      </li>
+  <ul class="menu-list">
+    <li *ngFor="let lista of listas" class="menu-item">
+      <img [src]="'../../../assets/images/' + lista.logo" class="logo" alt="{{lista.label}} logo">
+      <a [routerLink]="lista.url" class="menu-link">{{lista.label}}</a>
+    </li>
   </ul>
 </div>
-<hr>
-
+<hr class="divider">
