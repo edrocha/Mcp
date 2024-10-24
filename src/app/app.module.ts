@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { TitleComponent } from './componentes/title/title.component';
 import { InputComponent } from './componentes/input/input.component';
 import { NumberComponent } from './componentes/number/number.component';
-import { DataComponent } from './componentes/data/data.component';
+import { inputDataComponent } from './componentes/data/data.component';
 import { MenuComponent } from './componentes/menu/menu.component';
 import { FrmInputComponent } from './features/frm-input/frm-input.component';
 import { HomeComponent } from './features/home/home.component';
@@ -22,7 +22,7 @@ import { AccordionComponent } from './componentes/accordion/accordion.component'
 import { FrmAccordionComponent } from './features/frm-accordion/frm-accordion.component';
 import { FrmBadgeComponent } from './features/frm-badge/frm-badge.component';
 import { BadgeComponent } from './componentes/badge/badge.component';
-import { CarouselComponent } from './componentes/carousel/carousel.component';
+import { CarouselComponent } from './componentes/carrousel/carousel.component';
 import { FrmCarouselComponent } from './features/frm-carousel/frm-carousel.component';
 import { FrmGridComponent } from './features/frm-grid/frm-grid.component';
 import { M3GridComponent } from './componentes/m3-grid/m3-grid.component';
@@ -34,7 +34,7 @@ import { M3GridComponent } from './componentes/m3-grid/m3-grid.component';
     TitleComponent,
     InputComponent,
     NumberComponent,
-    DataComponent,
+    inputDataComponent,
     MenuComponent,
     FrmInputComponent,
     HomeComponent,

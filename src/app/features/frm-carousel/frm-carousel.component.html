@@ -1,11 +1,25 @@
 <br>
-<m3-title title="Componente Carousel"></m3-title>
+<m3-title title="Componente Carrousel"></m3-title>
 <br>
 
-<h3>&lt;m3-carousel conteudo="arraydeconteudo" imgs="Arrayimagens"&gt;  &lt;/m3-carousel&gt;</h3>
+<h3>&lt;m3-carousel [content]="Arrayimagens" [messageDot]="true"&gt;  &lt;/m3-carousel&gt;</h3>
 <br>
+<h5>Type Script</h5>
+<textarea rows="10" cols="150" style="background-color:black; color:white; font-size:16px" >
+
+  Arrayimagens!:any[]
+  ArrayMessages!:any[]
+
+  this.Arrayimagens = [
+  {id:1, img:'https://culturavgp.com.br/assets/img/slide_1.jpg', label:'O conhecimento amplia suas escolhas'},
+  {id:2, img:'https://culturavgp.com.br/assets/img/slide_2.jpg', label:'Aprender constantemente abre portas'},
+  {id:3, img:'https://culturavgp.com.br/assets/img/slide_3.jpg', label:'O conhecimento transforma a vida individual'},
+]
+</textarea>
+
 <h5>Resultado</h5>
 <br>
-<m3-carousel></m3-carousel>
+
+<m3-carousel [content]="Arrayimagens" [messageDot]="true" />
 
 

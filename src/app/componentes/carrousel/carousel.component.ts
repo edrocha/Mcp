@@ -8,8 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class CarouselComponent implements OnInit{
   ngOnInit(): void {
-    console.log(this.content)
-    this.startTimer()
+      this.startTimer()
   }
     slide:number = 1
     timeLeft: number = 10;
@@ -20,9 +19,10 @@ export class CarouselComponent implements OnInit{
   startTimer() {
 
       this.interval = setInterval(() => {
+        console.log(this.slide)
         if (this.timeLeft == 0 ) {
           this.slide ++
-          if (this.slide ==4)
+          if (this.slide >3)
             this.slide = 1
         }
         if(this.timeLeft > 0) {
